@@ -1,0 +1,29 @@
+/* Estilo personalizado para a classe "custom-background" */
+.custom-background {
+    background-color: #f2f2f2;
+    padding: 10px;
+  }
+  
+  /* Estilo personalizado para a classe "custom-box" */
+  .custom-box {
+    background-color: #e6f7ff;
+    padding: 10px;
+    border: 2px solid red;
+  }
+  @media (min-width:600px) {
+    nav {
+      float: left;
+      width: 25%;
+    }
+    section {
+      margin-left: 25%;
+    }
+  }
+  @media (max-width:599px) {
+    nav li {
+      display: inline;
+    }
+  }
+
+  
+

@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <title>Tarefa 01</title>
+    <style>
+        body {
+            font-family: Helvetica;
+            color: white;
+            text-align: center;
+        }
+        
+        .row {
+            height: 100px;
+        }
+        
+        .col {
+            font-size: 3em;
+            line-height: 100px;
+        }
+        
+        .col:nth-child(1) {
+            background-color: black;
+        }
+        
+        .col:nth-child(2) {
+            background-color: #666;
+        }
+        
+        .col:nth-child(3) {
+            background-color: #999;
+        }
+
+        
+        @media (min-width: 992px) {
+            .col {
+                height: auto;
+                font-size: 3em;
+                line-height: 100px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container-fluid">
+        <div class="row">
+            <div class="col">01</div>
+            <div class="col">02</div>
+            <div class="col">03</div>
+        </div>
+    </div>
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+</body>
+</html>

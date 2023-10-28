@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+  <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.4/dist/umd/popper.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+  <link rel="stylesheet" href="style.css">
+  <title>Tarefa 02</title>
+</head>
+<body>
+  <div class="container">
+    <div class="row justify-content-center mt-3">
+      <div class="col-md-8 custom-background"> 
+        <h1>Ótima escolha!</h1>
+        <p>Obrigado por comprar na Mirror Fashion! Preencha seus dados para efetivar a compra.</p>
+      </div>
+    </div>
+    <div class="row justify-content-center mt-0.2">
+      <div class="col-md-8 custom-background"> 
+        <div class="card">
+          <div class="card-body custom-box"> 
+            <form>
+              <fieldset>
+                <legend>Dados pessoais</legend>
+                <div class="form-group">
+                  <label for="nome">Nome completo</label>
+                  <input type="text" id="nome" name="nome" class="form-control" required>
+                </div>
+
+                <div class="form-group">
+                  <label for="email">Email</label>
+                  <input type="email" id="email" name="email" class="form-control" placeholder="email@exemplo.com" required>
+                </div>
+
+                <div class="form-group">
+                  <label for="cpf">CPF</label>
+                  <input type="text" id="cpf" name="cpf" class="form-control" placeholder="000.000.000-00" required>
+                </div>
+
+                <div class="form-group">
+                  <div class="form-check">
+                    <input type="checkbox" id="newsletter" name="newsletter" class="form-check-input" value="sim" checked>
+                    <label class="form-check-label" for="newsletter">Quero receber Newsletter da Mirror Fashion</label>
+                  </div>
+                </div>
+              </fieldset>
+              <button type="submit" class="btn btn-primary">Confirmar Pedido</button>
+            </form>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</body>
+</html>
