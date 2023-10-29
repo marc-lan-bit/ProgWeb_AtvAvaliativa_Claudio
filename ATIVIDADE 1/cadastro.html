@@ -2,70 +2,34 @@
 <html lang="pt-BR">
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Cadastro de Aluno</title>
-
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-alpha1/dist/css/bootstrap.min.css">
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-alpha1/dist/js/bootstrap.min.js"></script>
-
-    <style>
-        .container {
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            height: 100vh;
-        }
-        .cadastro-box {
-            background-color: #e3f2fd;
-            padding: 20px;
-            border-radius: 10px;
-            width: 400px;
-        }
-    </style>
+    <title>Cadastro</title>
 </head>
 <body>
-    <div class="container">
-        <div class="cadastro-box">
-            <h1 class="text-center">Cadastro de Aluno - Matrícula</h1>
-            <form action="#" method="post">
-                <div class="mb-3">
-                    <label for="nome" class="form-label">Nome*</label>
-                    <input type="text" class="form-control" id="nome" name="nome" required>
-                </div>
-                <div class="mb-3">
-                    <label for="email" class="form-label">Email*</label>
-                    <input type="email" class="form-control" id="email" name="email" required>
-                    <small class="form-text text-muted">Exemplo: exemplo@exemplo.com.br</small>
-                </div>
-                <div class="mb-3">
-                    <label for="telefone" class="form-label">Telefone</label>
-                    <div class="row">
-                        <div class="col-2">
-                            <input type="text" class="form-control" id="ddd" name="ddd" maxlength="2">
-                        </div>
-                        <div class="col-10">
-                            <input type="tel" class="form-control" id="numero" name="numero">
-                        </div>
-                    </div>
-                    <small class="form-text text-muted">Código de área</small>
-                </div>
-                <div class="mb-3">
-                    <label for="disciplina" class="form-label">Disciplina a Cursar</label>
-                    <select class="form-select" id="disciplina" name="disciplina">
-                        <option value="DISCIPLINA">DISCIPLINA</option>
-                        <option value="PROGRAMAÇÃO WEB">PROGRAMAÇÃO WEB</option>
-                        <option value="ESTRUTURA DE DADOS">ESTRUTURA DE DADOS</option>
-                        <option value="SISTEMAS OPERACIONAIS">SISTEMAS OPERACIONAIS</option>
-                        <option value="MATEMÁTICA">MATEMÁTICA</option>
-                        <option value="CONTABILIDADE">CONTABILIDADE</option>
-                    </select>
-                </div>
-                <button type="submit" class="btn btn-primary">Enviar</button>
-            </form>
-        </div>
-    </div>
-    <div class="col-md-12 text-center">
-        <a href="index.html">Voltar para a página inicial</a>
-    </div>
+    <h1>Cadastro de Aluno - Matrícula</h1>
+    
+    <form>
+        <label for="nome">Nome*:</label>
+        <input type="text" id="nome" name="nome" required><br><br>
+        
+        <label for="email">Email*:</label>
+        <input type="email" id="email" name="email" required><br><br>
+        
+        <label for="matricula">Matrícula:</label>
+        <input type="text" id="matricula" name="matricula"><br><br> 
+        
+        <label for="disciplina">Disciplinas:</label>
+        <select id="disciplina" name="disciplina" >
+            <option value="PROGRAMAÇÃO WEB">PROGRAMAÇÃO WEB</option>
+            <option value="ESTRUTURA DE DADOS">ESTRUTURA DE DADOS</option>
+            <option value="SISTEMAS OPERACIONAIS">SISTEMAS OPERACIONAIS</option>
+            <option value="MATEMÁTICA">MATEMÁTICA</option>
+            <option value="CONTABILIDADE">CONTABILIDADE</option>
+        </select><br><br>
+        
+        <input type="submit" value="Cadastrar">
+    </form>
+	<ul>
+        <li><a href="index.html">Retornar ao Menu Inicial</a></li>
+    </ul>
 </body>
 </html>
