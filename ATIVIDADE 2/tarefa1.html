@@ -2,56 +2,44 @@
 <html lang="pt-br">
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Layout em Grid com Bootstrap</title>
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
-    <title>Tarefa 01</title>
     <style>
         body {
-            font-family: Helvetica;
+            font-family: Helvetica, Arial, sans-serif;
             color: white;
             text-align: center;
-        }
-        
-        .row {
-            height: 100px;
-        }
-        
-        .col {
-            font-size: 3em;
             line-height: 100px;
-        }
-        
-        .col:nth-child(1) {
-            background-color: black;
-        }
-        
-        .col:nth-child(2) {
-            background-color: #666;
-        }
-        
-        .col:nth-child(3) {
-            background-color: #999;
+            font-size: 3em;
         }
 
-        
-        @media (min-width: 992px) {
-            .col {
-                height: auto;
-                font-size: 3em;
-                line-height: 100px;
-            }
+        .col-custom {
+            height: 100px;
+        }
+
+        .col1 {
+            background-color: black;
+        }
+
+        .col2 {
+            background-color: #666;
+        }
+
+        .col3 {
+            background-color: #999;
         }
     </style>
 </head>
 <body>
-    <div class="container-fluid">
+    <div class="container">
         <div class="row">
-            <div class="col">01</div>
-            <div class="col">02</div>
-            <div class="col">03</div>
+            <div class="col col-custom col1">Coluna 1</div>
+            <div class="col col-custom col2">Coluna 2</div>
+            <div class="col col-custom col3">Coluna 3</div>
         </div>
     </div>
 
+    
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
