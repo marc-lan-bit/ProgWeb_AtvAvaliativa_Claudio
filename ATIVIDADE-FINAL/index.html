@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Carrinho de Compras</title>
+
+  <!-- Adicione os estilos do Bootstrap (certifique-se de ter instalado o Bootstrap) -->
+  <link href="node_modules/bootstrap/dist/css/bootstrap.min.css" rel="stylesheet">
+</head>
+
+<body>
+  <div id="app" class="container mt-5">
+    <div class="row">
+      <div class="col-md-6">
+        <!-- Componente ProductList -->
+        <product-list :products="products" @add-to-cart="addToCart"></product-list>
+      </div>
+      <div class="col-md-6">
+        <!-- Componente ShoppingCart -->
+        <shopping-cart :cart="cart" :total="total" @remove-from-cart="removeFromCart" @checkout="checkout"></shopping-cart>
+      </div>
+    </div>
+  </div>
+
+  <!-- Adicione os scripts do Vue.js e Bootstrap (certifique-se de ter instalado o Vue.js) -->
+  <script src="node_modules/vue/dist/vue.main.js"></script>
+  <!-- Adicione o script do seu aplicativo Vue -->
+  <script src="dist/js/App.vue"></script>
+</body>
+
+</html>
