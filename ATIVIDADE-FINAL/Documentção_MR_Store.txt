@@ -1,5 +1,8 @@
 # Documentação do Site MR Store
 
+Desenvolvedores: Marcell Landry Negrão Gomes
+                 Roberth da Silva Souza
+
 ## Estrutura do Projeto
 
 O projeto MR Store é uma loja online que utiliza tecnologias web modernas, incluindo HTML, CSS, JavaScript e o framework Vue.js para a interatividade da interface do usuário.
