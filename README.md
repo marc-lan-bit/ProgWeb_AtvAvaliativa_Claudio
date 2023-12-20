@@ -1,9 +1,8 @@
 # Documentação do Site MR Store
 
 
-Desenvolvedores: Marcell Landry Negrão Gomes
-                 Roberth da Silva Souza
-
+Desenvolvedores: Marcell Landry Negrão Gomes e Roberth da Silva Souza
+                 
 
 ## Estrutura do Projeto
 
